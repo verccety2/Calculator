@@ -1,0 +1,73 @@
+
+
+
+body {
+background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.display {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background-color: #7FDBFF;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 25px;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.calc {
+    height: 365px;
+    width: 365px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    margin: -25px 0 0 -25px;
+    opacity: 0.85;
+    
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-template-rows: repeat(5, 65px);
+    
+}
+
+
+button.digits {
+    background-color: rgb(173, 216, 230);
+}
+
+.operators {
+    background-color: lightgray;
+}
+
+button.equal {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 40px;
+}
+
+button:active  {
+    background-color: rgb(112, 141, 151);
+    box-shadow: 0 5px #666;
+}
+
+button:hover {
+    background-color: rgb(228, 155, 87);
+    box-shadow: 0 5px #666;
+}
+
+.operators:active {
+    background-color: orange;
+}
+
+button {
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
